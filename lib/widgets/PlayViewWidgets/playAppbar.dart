@@ -30,11 +30,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             Icons.favorite,
             color: isFavorite ? Colors.tealAccent : Colors.white,
           ),
-          onPressed: onFavoritePressed, // Toggle favorite status
+          onPressed: onFavoritePressed,
         ),
         IconButton(
           icon: const Icon(Icons.list),
-          onPressed: onShowFavorites, // Navigate to the favorites page
+          onPressed: onShowFavorites,
         ),
       ],
     );

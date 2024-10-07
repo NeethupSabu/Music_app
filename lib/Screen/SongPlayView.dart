@@ -123,12 +123,8 @@ class _PlayViewState extends State<PlayView> {
                   audioPlayer.resume();
                 }
               },
-              onSkipPrevious: () {
-                // Skip to previous logic
-              },
-              onSkipNext: () {
-                // Skip to next logic
-              },
+              onSkipPrevious: () {},
+              onSkipNext: () {},
             ),
           ],
         ),

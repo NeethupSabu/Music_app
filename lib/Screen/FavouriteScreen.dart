@@ -10,7 +10,6 @@ class FavoritePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Remove the AppBar to match the design
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -24,7 +23,6 @@ class FavoritePage extends StatelessWidget {
         ),
         child: Column(
           children: [
-            // Top section with the favorite icon, profile image, and menu icon
             Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 50.0, horizontal: 16.0),
@@ -38,10 +36,9 @@ class FavoritePage extends StatelessWidget {
                       // Handle favorite icon press
                     },
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 60,
-                    backgroundImage: AssetImage(
-                        'assets/profile_image.png'), // Replace with your profile image path
+                    backgroundImage: AssetImage('assets/profile_image.png'),
                   ),
                   IconButton(
                     icon: const Icon(Icons.more_horiz,
@@ -53,7 +50,6 @@ class FavoritePage extends StatelessWidget {
                 ],
               ),
             ),
-            // Songs List
             Expanded(
               child: favoriteSongs.isEmpty
                   ? const Center(
@@ -78,7 +74,6 @@ class FavoritePage extends StatelessWidget {
                             ),
                             child: Row(
                               children: [
-                                // Song title and artist information
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment:
@@ -103,12 +98,10 @@ class FavoritePage extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                // Play button
                                 IconButton(
                                   icon: const Icon(Icons.play_circle,
                                       color: Colors.teal, size: 32),
                                   onPressed: () {
-                                    // Play the selected favorite song
                                     AudioPlayer().play(AssetSource(song.url));
                                   },
                                 ),

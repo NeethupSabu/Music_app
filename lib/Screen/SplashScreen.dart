@@ -43,17 +43,15 @@ class _SplashScreenState extends State<SplashScreen> {
               Icon(
                 Icons.music_note,
                 color: Colors.white,
-                size: screenWidth * 0.18, // Reduced icon size
+                size: screenWidth * 0.18,
               ),
-              SizedBox(
-                  height: screenHeight *
-                      0.02), // Smaller space between icon and text
+              SizedBox(height: screenHeight * 0.02),
               Text(
                 'Enjoy Your Favourite Music',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: screenWidth * 0.065, // Reduced font size for title
+                  fontSize: screenWidth * 0.065,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -63,8 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize:
-                      screenWidth * 0.04, // Smaller font size for subtitle
+                  fontSize: screenWidth * 0.04,
                 ),
               ),
             ],
